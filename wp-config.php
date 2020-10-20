@@ -54,7 +54,7 @@ define( 'AUTH_SALT',        '?|#>aW}2Tgq:n(8Nk~i)aMAA[ =^qx[;xeb+v+=]/j {E<=&-hh
 define( 'SECURE_AUTH_SALT', 'v@C{M&{z-h##Ep&zm=6!Bg+!6<W:-SS|ZMZL>wJ[~s6}/Qj?QunCW=:?|O|9#RS2' );
 define( 'LOGGED_IN_SALT',   ':U}=mOJ-UtP!:nXfe)f-m$~>>I2` H@}Jj!pp2|-yeDJe8b5A.#*/JCv2`i1b5!4' );
 define( 'NONCE_SALT',       'Br?dL4{-vX$w*L }LC&3U{e.Kx$q`yVATu9O)T]bw&gwLkLb 2:&^Z-M)7^8x|r0' );
-
+set_time_limit(300);
 /**#@-*/
 
 /**
@@ -77,7 +77,7 @@ $table_prefix = 'wptk_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', false );
+define( 'WP_DEBUG', true );
 
 /* That's all, stop editing! Happy publishing. */
 
