@@ -1,0 +1,100 @@
+/* Header
+------------------------------------------------------*/
+
+.site-header {
+	position: relative;
+	z-index: 1000;
+
+	// .admin-bar & {
+	// 	top: 32px;
+	// }
+
+	/* Header site logo
+	------------------------------------------------------*/
+
+	.site-logo{
+		
+	}
+
+	/* Navigation
+	------------------------------------------------------*/
+
+	.site-navigation {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		ul {
+			margin: 0;
+			padding: 0;
+			display: flex;
+
+			li {
+				list-style: none;
+				position: relative;
+
+				a {
+					display: block;
+					padding: 0 15px;
+				}
+
+				/* 2. level sub menu
+				------------------------------------------------------*/
+
+				&:hover{
+					
+					.sub-menu{
+						pointer-events: all;
+						visibility: visible;
+						opacity: 1;
+					}
+
+				}
+
+				.sub-menu{
+					position: absolute;
+					pointer-events: none;
+					visibility: hidden;
+					opacity: 0;
+					display: block;
+					// transition: 200ms;
+
+					li{
+						position: relative;
+
+						a{
+							white-space: nowrap;
+						}
+
+						/* 3. level sub menu (hidden by default)
+						------------------------------------------------------*/
+
+						// &:hover{
+							
+						// 	.sub-menu{
+						// 		pointer-events: all;
+						// 		visibility: visible;
+						// 		opacity: 1;
+						// 	}
+
+						// }
+
+						.sub-menu{
+							display: none;
+							// pointer-events: none;
+							// visibility: hidden;
+							// opacity: 0;
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}

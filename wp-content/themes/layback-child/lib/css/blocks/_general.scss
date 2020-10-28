@@ -1,0 +1,34 @@
+/* General block styling
+------------------------------------------------------*/
+
+.wp-block-group{
+	margin: auto;
+	width: 100%;
+	padding: 0 15px;
+	max-width: $fullsize;
+
+	.wp-block-group__inner-container{
+		width: 100%;
+		margin: auto;
+	}
+
+	&.alignfull{
+		max-width: 100%;
+
+		.wp-block-group__inner-container{
+			width: 100%;
+			max-width: $fullsize;
+			margin: auto;
+		}
+
+	}
+
+	&.alignwide{
+		max-width: $xl;
+
+		.wp-block-group__inner-container{
+			width: 100%;
+		}
+	}
+
+}
