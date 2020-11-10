@@ -1,0 +1,53 @@
+# wp-admin/*
+# wp-includes/*
+# wp-content/languages/*
+wp-content/plugins/loco-translate/
+wp-content/plugins/query-monitor/
+wp-content/backup/*
+wp-content/cache/*
+wp-content/upgrade/*
+wp-content/uploads/wc-logs/*
+# wp-content/uploads/*
+wp-content/db.php
+*/scss_cache/*
+*/wc-logs/*
+sitemap.*
+
+# SSL
+*.crt
+*.cert
+*.key
+
+
+# localfiles for wordpress
+wp-config.php
+readme.html
+# index.php
+# license.txt
+# licens.html
+# wp-activate.php
+# wp-blog-header.php
+# wp-comments-post.php
+# wp-config-sample.php
+# wp-cron.php
+# wp-links-opml.php
+# wp-load.php
+# wp-login.php
+# wp-mail.php
+# wp-settings.php
+# wp-signup.php
+# wp-trackback.php
+# xmlrpc.php
+
+
+# Hidden system files
+*.DS_Store
+*.htaccess
+*[Tt]humbs.db
+*.Trashes
+*.cert
+*.key
+prepros-6.config
+ 
+# Include these files in previously blocked directories
+!wp-content/uploads/.htaccess

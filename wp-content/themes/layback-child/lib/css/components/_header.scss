@@ -12,8 +12,128 @@
 	/* Header site logo
 	------------------------------------------------------*/
 
-	.site-logo{
-		
+	.site-logo {}
+
+
+
+	body {
+		height: 0;
+		widows: 0;
+		left: 0;
+		top: 0;
+	}
+
+
+	.bannerimage {
+		position: relative;
+		width: 100%;
+		z-index: 9;
+
+
+		.imaget img {
+			max-height: 100vh;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+
+		.Blureffect {
+			z-index: 1;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100vh;
+			background-color: rgba(rgb(16, 113, 151), .4);
+		}
+
+	}
+
+	.navmenu {
+		z-index: 100000;
+		position: fixed;
+		width: 100%;
+		left: 0;
+		top: 0;
+	}
+
+	.Maintxt {
+		z-index: 10;
+		width: 100%;
+		top: 25%;
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+
+		.smalltxt {
+			font-family: $fontmain;
+			align-self: center;
+			justify-content: center;
+			font-size: 11px;
+			color: $primary;
+
+		}
+
+		.biggrtxt {
+			font-family: $fontmain;
+			text-align: center;
+			align-self: center;
+			justify-content: center;
+			font-size: 40px;
+			color: $white;
+		}
+
+		.buttonsban {
+			position: relative;
+			top: 70px;
+			align-self: center;
+			font-family: $fontmain;
+
+			.button1 {
+				margin: $marginbutton;
+				border: $white solid 1px;
+				background-color: transparent;
+				color: $white;
+				padding: $buttonsize;
+				border-radius: 5px;
+				text-align: center;
+				text-decoration: none;
+				font-size: 16px;
+				transition: all $tanimation;
+			}
+
+			.button1:hover {
+				color: $primary;
+				border: $primary solid 1px;
+				box-shadow: 5px 5px $primary;
+				margin: $marginbutton;
+				background-color: transparent;
+				padding: $buttonsize;
+				border-radius: 5px;
+				text-align: center;
+				text-decoration: none;
+				font-size: 16px;
+			}
+
+			.button2 {
+				margin: $marginbutton;
+				border: $primary solid 1px;
+				background-color: $primary;
+				color: $white;
+				padding: $buttonsize;
+				border-radius: 5px;
+				text-align: center;
+				text-decoration: none;
+				font-size: 16px;
+				transition: all $tanimation;
+			}
+
+			.button2:hover {
+				border: $white solid 1px;
+				background-color: transparent;
+			}
+		}
 	}
 
 	/* Navigation
@@ -42,9 +162,9 @@
 				/* 2. level sub menu
 				------------------------------------------------------*/
 
-				&:hover{
-					
-					.sub-menu{
+				&:hover {
+
+					.sub-menu {
 						pointer-events: all;
 						visibility: visible;
 						opacity: 1;
@@ -52,7 +172,7 @@
 
 				}
 
-				.sub-menu{
+				.sub-menu {
 					position: absolute;
 					pointer-events: none;
 					visibility: hidden;
@@ -60,10 +180,10 @@
 					display: block;
 					// transition: 200ms;
 
-					li{
+					li {
 						position: relative;
 
-						a{
+						a {
 							white-space: nowrap;
 						}
 
@@ -71,7 +191,7 @@
 						------------------------------------------------------*/
 
 						// &:hover{
-							
+
 						// 	.sub-menu{
 						// 		pointer-events: all;
 						// 		visibility: visible;
@@ -80,7 +200,7 @@
 
 						// }
 
-						.sub-menu{
+						.sub-menu {
 							display: none;
 							// pointer-events: none;
 							// visibility: hidden;

@@ -1,0 +1,20 @@
+.block-about .Maindata {
+  width: 50%;
+  height: 50%;
+  display: inline-block;
+  /* display: flex;
+  flex-direction: row; */
+}
+.block-about .Maindata .Mainsubdata h2 {
+  font-family: "Goldman", cursive;
+  font-size: 20px;
+  color: #FF3454;
+}
+.block-about .Maindata .Mainsubdata h1 {
+  font-family: "Goldman", cursive;
+  font-size: 40px;
+  color: black;
+}
+.block-about .smallimage {
+  width: 30%;
+}

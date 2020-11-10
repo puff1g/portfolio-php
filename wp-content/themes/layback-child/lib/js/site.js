@@ -1,5 +1,5 @@
 jQuery(document).ready(function ($){
-
+	console.log("site.js");
 	/* Mobile navigation
 	------------------------------------------------------------------ */
 

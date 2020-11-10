@@ -1,23 +1,33 @@
 
 // Colors
-$primary:						#323232;
+$primary:						#FF3454;
+$secondary:                     #062E3E;
+$Secondary-Dark: rgba(13, 90, 121, 0.4);
 $darkgray:						#2c3e50;
 $midgray:						#95a5a6;
 $lightgray:						#ecf0f1;
 $border:						#bdc3c7;
-
+$black: black;
+$white: white;
 $green:							#2ecc71;
 $red:							#e74c3c;
 $yellow:						#f1c40f;
 $blue:							#3498db;
 $orange:						#e67e22;
-
+$grey: gray;
+$gray: $grey;
 // Sizes
 $xl:							1600px;
 $fullsize:						1140px;
 $md:							1024px;
 $sm:							768px;
 $xs:							576px;
+
+// animation
+$tanimation: .2s;
+//for button
+$buttonsize: 18px 40px;
+$marginbutton: 0px 20px;
 
 //Padding for cols, sides (horz) and top/bottom (vert)
 $col-padding-horz:				15px;
@@ -26,4 +36,5 @@ $col-padding-vert:				0px;
 // Fonts
 $headline-font:					-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
 $body-font:						-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+$fontmain: 'Goldman', cursive;
 $fontsize:						1em;

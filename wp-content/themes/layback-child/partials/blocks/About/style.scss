@@ -1,0 +1,31 @@
+@import '../../../lib/css/abstract/_variables.scss';
+
+.block-about {
+    .Maindata {
+        width: 50%;
+        height: 50%;
+        display: inline-block;
+        /* display: flex;
+    flex-direction: row; */
+        .Mainsubdata {
+
+            // flex-direction: column;
+            h2 {
+                font-family: $fontmain;
+                font-size: 20px;
+                color: $primary;
+            }
+
+            h1 {
+                font-family: $fontmain;
+                font-size: 40px;
+                color: $black;
+            }
+        }
+
+    }
+
+    .smallimage{
+        width: 30%;
+    }
+}
