@@ -55,8 +55,8 @@ define( 'SECURE_AUTH_SALT', 'v@C{M&{z-h##Ep&zm=6!Bg+!6<W:-SS|ZMZL>wJ[~s6}/Qj?Qun
 define( 'LOGGED_IN_SALT',   ':U}=mOJ-UtP!:nXfe)f-m$~>>I2` H@}Jj!pp2|-yeDJe8b5A.#*/JCv2`i1b5!4' );
 define( 'NONCE_SALT',       'Br?dL4{-vX$w*L }LC&3U{e.Kx$q`yVATu9O)T]bw&gwLkLb 2:&^Z-M)7^8x|r0' );
 set_time_limit(300);
-// define('WP_HOME',       'http://local.tkeriksen.com);
-// define('WP_SITEURL',    'http://local.tkeriksen.com);
+//define('WP_HOME',       'http://local.tkeriksen.com');
+//define('WP_SITEURL',    'http://local.tkeriksen.com');
 /**#@-*/
 
 /**
