@@ -48,6 +48,6 @@ readme.html
 *.cert
 *.key
 prepros-6.config
- 
+
 # Include these files in previously blocked directories
 !wp-content/uploads/.htaccess

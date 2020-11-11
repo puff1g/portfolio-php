@@ -1,0 +1,148 @@
+@import '../../../lib/css/abstract/_variables.scss';
+
+.block-showprojects {
+    margin: 100px 0;
+
+    .projecttext {
+        text-align: center;
+
+        h2 {
+            font-family: $fontmain;
+            font-size: 20px;
+            color: $primary;
+        }
+
+        h1 {
+            font-family: $fontmain;
+            font-size: 40px;
+            color: $black;
+        }
+    }
+
+    .projectsingle {
+        width: 35%;
+        height: 100px;
+        background-color: black;
+
+        .image {
+            width: auto;
+            height: 10%;
+        }
+
+        .info {}
+
+    }
+
+    .projects_showcase_parent {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 500px;
+        width: 100%;
+
+        .project_box {
+            flex: 1;
+            flex-basis: auto;
+            max-width: 32%;
+
+            height: 100%;
+            border: 1px solid darken(white, 8%);
+
+            .upper {
+                position: relative;
+                width: 100%;
+                height: 200px;
+                background-color: $primary;
+
+                .number {
+                    font-size: 40px;
+                    position: absolute;
+                    right: 5px;
+                    bottom: 5px;
+                    z-index: 3;
+                    color: $primary;
+                }
+
+                .overlay {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                    background-color: rgba($secondary, .7);
+                }
+
+                .bg-image {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    z-index: 0;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .lower {
+                padding: 15px;
+
+                .type {
+                    color: $primary;
+                }
+
+                .title {
+                    font-size: 22px;
+                    font-weight: bolder;
+                    margin-bottom: 15px;
+                }
+
+                .actions {
+                    padding: 20px 0;
+                    width: 100%;
+
+                    .buttonview {
+                        position: relative;
+                        padding: 10px;
+                        text-decoration: none;
+                        border: none;
+                        width: 40%;
+                        background-color: $white;
+
+                        &::after {
+                            position: absolute;
+                            right: -120px;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            content: "";
+                            width: 80px;
+                            height: 2px;
+                            background-color: $primary;
+                        }
+
+                        &:hover {
+                            cursor: pointer;
+                            color: $primary;
+                            transition: all $tanimation;
+                            
+                        }
+
+                        &:hover {
+                            &:after{
+                                transition: all $tanimation;
+                                right: -12px;
+                            }
+                        }
+                    }
+
+                    
+                }
+            }
+        }
+    }
+
+
+}

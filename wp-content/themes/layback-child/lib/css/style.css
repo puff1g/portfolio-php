@@ -822,6 +822,7 @@ ol li {
   background-color: rgba(16, 113, 151, 0.4);
 }
 .site-header .navmenu {
+  background-color: #062e3ead;
   z-index: 100000;
   position: fixed;
   width: 100%;
