@@ -83,9 +83,13 @@ function ShowProjects_block_render_callback($block, $content = '', $is_preview =
 							$kat = get_the_terms ( $oPost, "project_cat");
 							foreach($kat as $key => $oTerm) {
 								
-								echo $oTerm->name;
+								
+								?>
+								<span style="backgroundcolor: <?php echo get_field("term_color", "project_cat_".$oTerm->term_id ); ?>"><?php echo $oTerm->name;   ?> </span>
+								<?php 
 							}
-							?></div>
+							?>
+							</div>
 							<div class="title"><?php echo $oPost->post_title; ?></div>
 							<div class="desc">
 								<?php
