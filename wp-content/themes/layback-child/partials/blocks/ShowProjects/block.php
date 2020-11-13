@@ -59,29 +59,55 @@ function ShowProjects_block_render_callback($block, $content = '', $is_preview =
 				<h2>Selected</h2>
 				<h1>Projects</h1>
 			</div>
-
 			<div class="projects_showcase_parent">
-				<div class="project_box">
-					<div class="upper">
-						<div class="number">01</div>
-						<div class="overlay"></div>
-						<div class="bg-image">
-							<img src="https://i.ytimg.com/vi/DCrP6jDYpA4/maxresdefault.jpg" alt="">
+				<?php
+				$i = 1;
+				$posts = get_posts(array(
+					'numberposts'      => 3,
+					'orderby'          => 'date',
+					'order'            => 'ASC',
+					'post_type'        => 'project',
+				));
+				foreach ($posts as $key => $oPost) {
+				?>
+					<div class="project_box">
+						<div class="upper">
+							<div class="number"><?php echo sprintf("%02d", $i); ?></div>
+							<div class="overlay"></div>
+							<div class="bg-image">
+								<img src="<?php echo get_the_post_thumbnail_url($oPost->ID); ?>" alt="">
+							</div>
+						</div>
+						<div class="lower">
+							<div class="type"><?php 
+							$kat = get_the_terms ( $oPost, "project_cat");
+							foreach($kat as $key => $oTerm) {
+								
+								echo $oTerm->name;
+							}
+							?></div>
+							<div class="title"><?php echo $oPost->post_title; ?></div>
+							<div class="desc">
+								<?php
+								$str = apply_filters( 'the_content', $oPost->post_content);
+								echo  strlen($str) > 200 ? substr($str,0,200)."..." : $str;
+									?>		
+							</div>
+							<div class="actions">
+								<a href="#">
+									<button class="buttonview">View Project</button>
+								</a>
+							</div>
 						</div>
 					</div>
-					<div class="lower">
-						<div class="type">Console App</div>
-						<div class="title">Værksted System</div>
-						<div class="desc">
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo voluptates rem suscipit maiores similique unde a quo dolores nihil nulla delectus eum nam sunt officiis.
-						</div>
-						<div class="actions">
-							<a href="#">
-								<button class="buttonview">View Project</button>
-							</a>
-						</div>
-					</div>
-				</div>
+				<?php
+					$i++;
+				}
+				?>
+			</div>
+
+			<div class="allprojects">
+				<buton class="ViewButton">View All Projects</buton>
 			</div>
 
 		</div>

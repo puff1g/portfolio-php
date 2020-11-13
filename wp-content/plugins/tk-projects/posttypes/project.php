@@ -91,35 +91,35 @@
 	 		)
 	 	);
 
-	 	// register_taxonomy(
-	 	// 	$taxonomy_name,
-	 	// 	array($post_type_name),
-	 	// 	array(
-	 	// 		'hierarchical'			=> true,
-	 	// 		'labels'				=> array(
-	 	// 			'name'					=> ucfirst($taxonomy_multiple),
-	 	// 			'singular_name'			=> ucfirst($taxonomy_singular),
-	 	// 			'menu_name'				=> ucfirst($taxonomy_menuname),
-	 	// 			'search_items'			=> __( 'Search for', 'layback' ),
-	 	// 			'all_items'				=> __( 'All', 'layback' ).' '.$taxonomy_multiple,
-	 	// 			'parent_item'			=> __( 'Parent', 'layback') . ' ' . $taxonomy_singular,
-	 	// 			'parent_item_colon'		=> __( 'Parent item:', 'layback'),
-	 	// 			'edit_item'				=> __( 'Edit', 'layback' ) . ' ' . $taxonomy_singular,
-	 	// 			'update_item'			=> __( 'Update', 'layback') . ' ' . $taxonomy_singular,
-	 	// 			'add_new_item'			=> __( 'Add new', 'layback') . ' ' . $taxonomy_singular,
-	 	// 			'new_item_name'			=> sprintf(__( 'New %s-name', 'layback' ), $taxonomy_singular),
-	 	// 		),
-	 	// 		'show_admin_column' 	=> true, 
-	 	// 		'show_ui'				=> true,
-	 	// 		'query_var'				=> true,
-	 	// 		'rewrite'				=> array(
-	 	// 			'slug'					=> $taxonomy_slug
-	 	// 		),
-	 	// 		'can_export'			=> true,
-	 	// 		'show_in_rest'			=> true,
-	 	// 		 'rest_base'				=> $taxonomy,
-	 	// 	)
-	 	// );
+	 	register_taxonomy(
+	 		$taxonomy_name,
+	 		array($post_type_name),
+	 		array(
+	 			'hierarchical'			=> true,
+	 			'labels'				=> array(
+	 				'name'					=> ucfirst($taxonomy_multiple),
+	 				'singular_name'			=> ucfirst($taxonomy_singular),
+	 				'menu_name'				=> ucfirst($taxonomy_menuname),
+	 				'search_items'			=> __( 'Search for', 'layback' ),
+	 				'all_items'				=> __( 'All', 'layback' ).' '.$taxonomy_multiple,
+	 				'parent_item'			=> __( 'Parent', 'layback') . ' ' . $taxonomy_singular,
+	 				'parent_item_colon'		=> __( 'Parent item:', 'layback'),
+	 				'edit_item'				=> __( 'Edit', 'layback' ) . ' ' . $taxonomy_singular,
+	 				'update_item'			=> __( 'Update', 'layback') . ' ' . $taxonomy_singular,
+	 				'add_new_item'			=> __( 'Add new', 'layback') . ' ' . $taxonomy_singular,
+	 				'new_item_name'			=> sprintf(__( 'New %s-name', 'layback' ), $taxonomy_singular),
+	 			),
+	 			'show_admin_column' 	=> true, 
+	 			'show_ui'				=> true,
+	 			'query_var'				=> true,
+	 			'rewrite'				=> array(
+	 				'slug'					=> $taxonomy_slug
+	 			),
+	 			'can_export'			=> true,
+	 			'show_in_rest'			=> true,
+	 			//  'rest_base'				=> $taxonomy,
+	 		)
+	 	);
 
 	 	// register_taxonomy(
 	 	// 	$tag_name, 

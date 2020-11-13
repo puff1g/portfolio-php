@@ -127,22 +127,51 @@
                             cursor: pointer;
                             color: $primary;
                             transition: all $tanimation;
-                            
+
                         }
 
                         &:hover {
-                            &:after{
+                            &:after {
                                 transition: all $tanimation;
                                 right: -12px;
                             }
                         }
                     }
 
-                    
+
                 }
             }
         }
     }
 
+    .allprojects {
+        width: 100%;
+        margin: 40px 0;
+        align-content: center;
+        .ViewButton {
+            margin: $marginbutton;
+            border: $black solid 1px;
+            background-color: transparent;
+            color: $black;
+            padding: $buttonsize;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            transition: all $tanimation;
+        }
 
+        .ViewButton:hover {
+            color: $primary;
+            border: $primary solid 1px;
+            box-shadow: 5px 5px $primary;
+            margin: $marginbutton;
+            background-color: transparent;
+            padding: $buttonsize;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+        }
+    }
 }
