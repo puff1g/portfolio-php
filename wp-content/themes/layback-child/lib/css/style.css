@@ -944,10 +944,48 @@ ol li {
   display: none;
 }
 
+.site-footer {
+  background-color: #062E3E;
+}
+.site-footer .footmain {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding: 65px 0;
+  color: white;
+}
+.site-footer .footmain .raisedbutton {
+  display: grid;
+  place-items: center;
+  top: -17.5px;
+  right: -17.5px;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #FF3454;
+  color: white;
+}
+.site-footer .footmain :hover {
+  cursor: pointer;
+}
+.site-footer .footmain .socials {
+  padding: 7px 0 40px;
+  color: #FF3454;
+}
+.site-footer .footmain .socials a {
+  margin: 0px 10px;
+}
+.site-footer .footmain .socials a i {
+  font-size: 22px;
+}
 .site-footer .copyright {
+  color: #FF3454;
   text-align: center;
   padding: 0;
-  margin: 10px 0;
+}
+.site-footer .copyright .yearc {
+  color: white;
 }
 
 .wp-block-cover.alignwide {

@@ -14,7 +14,13 @@ jQuery(document).ready(function ($){
 	});
 
 	jQuery('.current-menu-parent span').addClass('open');
-	
+	jQuery(".raisedbutton").click(function () {
+		//1 second of animation time
+		//html works for FFX but not Chrome
+		//body works for Chrome but not FFX
+		//This strange selector seems to work universally
+		jQuery("html, body").animate({scrollTop: 0}, 1000);
+	});
 });
 
 function is_touch_device() {
@@ -32,3 +38,4 @@ function is_touch_device() {
 	var query = ['(', prefixes.join('touch-enabled),('), 'heartz', ')'].join('');
 	return mq(query);
 }
+

@@ -36,7 +36,7 @@
 		------------------------------------------------------------------ */
 
 		// wp_enqueue_script( 'easing', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js', array('jquery'), '1.4.1', true );
-		// wp_enqueue_script( 'fontawesome', 'https://kit.fontawesome.com/4a41e46424.js', array('jquery'), '5.11.2', true );
+		wp_enqueue_script( 'fontawesome', 'https://kit.fontawesome.com/4a41e46424.js', array('jquery'), '5.11.2', true );
 		wp_enqueue_script( 'layback-site', get_stylesheet_directory_uri().'/lib/js/site.js', array('jquery'), filemtime(get_stylesheet_directory() . '/lib/js/site.js'), true );
 	}
 
