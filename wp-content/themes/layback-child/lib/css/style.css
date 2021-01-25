@@ -444,7 +444,6 @@ select {
   border: 1px solid #bdc3c7;
   background-color: #fff;
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   font-size: 0.876em;
   outline: 0;
@@ -584,7 +583,6 @@ input[type=checkbox] {
   background-color: #fff;
   border: 1px solid #bdc3c7;
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   border-radius: 50%;
   width: 24px;
@@ -1088,7 +1086,6 @@ ol li {
   transform: translate(-50%, -50%);
   border: 0;
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   width: 10px;
   height: 10px;
@@ -1246,4 +1243,9 @@ ol li {
 .mobilemenu {
     display: block;
   }
+}
+.frm_fields_container {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }

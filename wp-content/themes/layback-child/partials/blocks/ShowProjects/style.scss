@@ -145,15 +145,14 @@
     }
 
     .allprojects {
-        width: 100%;
-        margin: 40px 0;
-        align-content: center;
+        margin: auto;
+        width: 50%;
+        padding: 10px;
         .ViewButton {
             margin: $marginbutton;
             border: $black solid 1px;
             background-color: transparent;
             color: $black;
-            padding: $buttonsize;
             border-radius: 5px;
             text-align: center;
             text-decoration: none;
@@ -162,6 +161,7 @@
         }
 
         .ViewButton:hover {
+            cursor: pointer;
             color: $primary;
             border: $primary solid 1px;
             box-shadow: 5px 5px $primary;

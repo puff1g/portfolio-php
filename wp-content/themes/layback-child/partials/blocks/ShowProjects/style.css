@@ -114,16 +114,15 @@
   right: -12px;
 }
 .block-showprojects .allprojects {
-  width: 100%;
-  margin: 40px 0;
-  align-content: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
 .block-showprojects .allprojects .ViewButton {
   margin: 0px 20px;
   border: black solid 1px;
   background-color: transparent;
   color: black;
-  padding: 18px 40px;
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
@@ -131,6 +130,7 @@
   transition: all 0.2s;
 }
 .block-showprojects .allprojects .ViewButton:hover {
+  cursor: pointer;
   color: #FF3454;
   border: #FF3454 solid 1px;
   box-shadow: 5px 5px #FF3454;

@@ -15,7 +15,7 @@
 	<div id="header" class="site-header">
 		<div class="bannerimage">
 			<div class="imaget">
-				<img src="<?php echo wp_get_attachment_url(20); ?>">
+				<img src="<?php echo wp_get_attachment_url(53); ?>">
 				<div class="navmenu">
 
 					<div class="container">
@@ -64,8 +64,8 @@
 							apps & websites.</h1>
 					</div>
 					<div class="buttonsban">
-						<button class="button1">View Projects</button>
-						<button class="button2">Contact Me</button>
+						<a href="#"><button class="button1">View Projects</button></a>
+						<a href="#"><button class="button2">Contact Me</button></a>
 					</div>
 				</div>
 			</div>

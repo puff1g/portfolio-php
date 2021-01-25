@@ -63,7 +63,7 @@ function tkeAbout_block_render_callback($block, $content = '', $is_preview = fal
 						Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</h4>
 				</div>
 			</div>
-			<img class="smallimage" src="<?php echo wp_get_attachment_url(24); ?>">
+			<img class="smallimage" src="<?php echo wp_get_attachment_url(55); ?>">
 		</div>
 	</div>
 	</div>
