@@ -1249,3 +1249,44 @@ ol li {
   width: 50%;
   padding: 10px;
 }
+.frm_fields_container .frm_submit button {
+  display: block !important;
+  margin: auto !important;
+  border: black solid 1px !important;
+  background-color: transparent !important;
+  color: black !important;
+  padding: 18px 40px !important;
+  border-radius: 5px !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  font-size: 16px !important;
+  transition: all 0.2s !important;
+}
+.frm_fields_container .frm_submit button:hover {
+  cursor: pointer !important;
+  color: #FF3454 !important;
+  border: #FF3454 solid 1px !important;
+  box-shadow: 5px 5px #FF3454 !important;
+  background-color: transparent !important;
+  padding: 18px 40px !important;
+  border-radius: 5px !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  font-size: 16px !important;
+}
+.frm_fields_container textarea:focus {
+  box-shadow: 0.5px 0.5px 0.5px 0.5px white !important;
+  border: 1px solid #062E3E !important;
+}
+.frm_fields_container input[type=text]:focus {
+  box-shadow: 0.5px 0.5px 0.5px 0.5px white !important;
+  border: 1px solid #062E3E !important;
+}
+.frm_fields_container input[type=email]:focus {
+  box-shadow: 0.5px 0.5px 0.5px 0.5px white !important;
+  border: 1px solid #062E3E !important;
+}
+.frm_fields_container input[type=radio]:focus {
+  box-shadow: 0.5px 0.5px 0.5px 0.5px white !important;
+  border: 1px solid #062E3E !important;
+}
