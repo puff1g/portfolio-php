@@ -27,6 +27,146 @@
             }
         }
 }
+.scroll-downs {
+    z-index: 999;
+    position: absolute;
+    top: 75vh;
+    right: 0;
+    bottom: 0;
+    left: 0.5vw;
+    margin: auto;
+    
+    width :34px;
+    height: 55px;
+}
+.mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+}
+.scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+}
+@keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+}
+.bannerimage {
+    position: relative;
+    width: 100%;
+    z-index: 9;
+
+
+    .imaget img {
+        max-height: 100vh;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .Blureffect {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(rgb(16, 113, 151), .4);
+    }
+
+}
+
+
+.Maintxt {
+    z-index: 10;
+    width: 100%;
+    top: 25%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    .smalltxt {
+        font-family: $fontmain;
+        align-self: center;
+        justify-content: center;
+        font-size: 11px;
+        color: $primary;
+
+    }
+
+    .biggrtxt {
+        font-family: $fontmain;
+        text-align: center;
+        align-self: center;
+        justify-content: center;
+        font-size: 40px;
+        color: $white;
+    }
+
+    .buttonsban {
+        position: relative;
+        top: 70px;
+        align-self: center;
+        font-family: $fontmain;
+
+        .button1 {
+            margin: $marginbutton;
+            border: $white solid 1px;
+            background-color: transparent;
+            color: $white;
+            padding: $buttonsize;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            transition: all $tanimation;
+        }
+
+        .button1:hover {
+            color: $primary;
+            border: $primary solid 1px;
+            box-shadow: 5px 5px $primary;
+            margin: $marginbutton;
+            background-color: transparent;
+            padding: $buttonsize;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .button2 {
+            margin: $marginbutton;
+            border: $primary solid 1px;
+            background-color: $primary;
+            color: $white;
+            padding: $buttonsize;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            transition: all $tanimation;
+        }
+
+        .button2:hover {
+            border: $white solid 1px;
+            background-color: transparent;
+        }
+    }
+}
 }
 
 .Single_projects{
@@ -48,4 +188,145 @@
             color: $secondary;
         }
     }
+    .scroll-downs {
+    z-index: 999;
+    position: absolute;
+    top: 75vh;
+    right: 0;
+    bottom: 0;
+    left: 0.5vw;
+    margin: auto;
+    
+    width :34px;
+    height: 55px;
+}
+.mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+}
+.scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+}
+@keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+}
+.bannerimage {
+    position: relative;
+    width: 100%;
+    z-index: 9;
+
+
+    .imaget img {
+        max-height: 100vh;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .Blureffect {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(rgb(16, 113, 151), .4);
+    }
+
+}
+
+
+.Maintxt {
+    z-index: 10;
+    width: 100%;
+    top: 25%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    .smalltxt {
+        font-family: $fontmain;
+        align-self: center;
+        justify-content: center;
+        font-size: 11px;
+        color: $primary;
+
+    }
+
+    .biggrtxt {
+        font-family: $fontmain;
+        text-align: center;
+        align-self: center;
+        justify-content: center;
+        font-size: 40px;
+        color: $white;
+    }
+
+    .buttonsban {
+        position: relative;
+        top: 70px;
+        align-self: center;
+        font-family: $fontmain;
+
+        .button1 {
+            margin: $marginbutton;
+            border: $white solid 1px;
+            background-color: transparent;
+            color: $white;
+            padding: $buttonsize;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            transition: all $tanimation;
+        }
+
+        .button1:hover {
+            color: $primary;
+            border: $primary solid 1px;
+            box-shadow: 5px 5px $primary;
+            margin: $marginbutton;
+            background-color: transparent;
+            padding: $buttonsize;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .button2 {
+            margin: $marginbutton;
+            border: $primary solid 1px;
+            background-color: $primary;
+            color: $white;
+            padding: $buttonsize;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            transition: all $tanimation;
+        }
+
+        .button2:hover {
+            border: $white solid 1px;
+            background-color: transparent;
+        }
+    }
+}
+
 }

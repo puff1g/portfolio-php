@@ -13,8 +13,12 @@
 	/* Header site logo
 	------------------------------------------------------*/
 
-	.site-logo {}
-
+	.site-logo {
+		h2{
+			color: $white;
+			margin: 0;
+		}
+	}
 
 
 	body {
@@ -31,119 +35,23 @@
 	}
 
 
-	.bannerimage {
-		position: relative;
-		width: 100%;
-		z-index: 9;
-
-
-		.imaget img {
-			max-height: 100vh;
-			height: 100%;
-			width: 100%;
-			object-fit: cover;
-		}
-
-		.Blureffect {
-			z-index: 1;
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100vh;
-			background-color: rgba(rgb(16, 113, 151), .4);
-		}
-
-	}
-
 	.navmenu {
+		padding: 15px 0;
 		background-color: $navbg;
 		z-index: 100000;
 		position: fixed;
 		width: 100%;
 		left: 0;
 		top: 0;
-	}
+		
+		ul li a{
+			color: $white!important;
+			font-weight: bold;
 
-	.Maintxt {
-		z-index: 10;
-		width: 100%;
-		top: 25%;
-		position: absolute;
-		display: flex;
-		flex-direction: column;
-		align-content: center;
-
-		.smalltxt {
-			font-family: $fontmain;
-			align-self: center;
-			justify-content: center;
-			font-size: 11px;
-			color: $primary;
-
-		}
-
-		.biggrtxt {
-			font-family: $fontmain;
-			text-align: center;
-			align-self: center;
-			justify-content: center;
-			font-size: 40px;
-			color: $white;
-		}
-
-		.buttonsban {
-			position: relative;
-			top: 70px;
-			align-self: center;
-			font-family: $fontmain;
-
-			.button1 {
-				margin: $marginbutton;
-				border: $white solid 1px;
-				background-color: transparent;
-				color: $white;
-				padding: $buttonsize;
-				border-radius: 5px;
-				text-align: center;
-				text-decoration: none;
-				font-size: 16px;
-				transition: all $tanimation;
-			}
-
-			.button1:hover {
-				color: $primary;
-				border: $primary solid 1px;
-				box-shadow: 5px 5px $primary;
-				margin: $marginbutton;
-				background-color: transparent;
-				padding: $buttonsize;
-				border-radius: 5px;
-				text-align: center;
-				text-decoration: none;
-				font-size: 16px;
-			}
-
-			.button2 {
-				margin: $marginbutton;
-				border: $primary solid 1px;
-				background-color: $primary;
-				color: $white;
-				padding: $buttonsize;
-				border-radius: 5px;
-				text-align: center;
-				text-decoration: none;
-				font-size: 16px;
-				transition: all $tanimation;
-			}
-
-			.button2:hover {
-				border: $white solid 1px;
-				background-color: transparent;
-			}
 		}
 	}
 
+	
 	/* Navigation
 	------------------------------------------------------*/
 
@@ -154,13 +62,16 @@
 		justify-content: flex-end;
 
 		ul {
-			margin: 0;
 			padding: 0;
 			display: flex;
 
 			li {
+				
 				list-style: none;
 				position: relative;
+				&.current_page_item, &.current-menu-item {
+					border-bottom: 1px solid $white;
+				}
 
 				a {
 					display: block;
@@ -176,6 +87,7 @@
 						pointer-events: all;
 						visibility: visible;
 						opacity: 1;
+						
 					}
 
 				}
@@ -190,8 +102,10 @@
 
 					li {
 						position: relative;
+						
 
 						a {
+							
 							white-space: nowrap;
 						}
 

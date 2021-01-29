@@ -1,6 +1,35 @@
 <?php get_header(); ?>
 	<?php if ( have_posts() ) : ?>
 		<div class="archive_projects">
+		<div id="<?php echo $block_id; ?>" class="<?php if( !empty($block_align) ) { echo 'align-' . $block_align; } ?> block-<?php echo $block_name; ?>">
+		<div class="bannerimage">
+			<div class="imaget">
+				<img src="<?php echo wp_get_attachment_url(53); ?>">
+				
+				<div class="Blureffect"></div>
+
+				<div class="Maintxt">
+					<div class="smalltxt">
+						<h1>... Loading Projects</h1>
+					</div>
+					<div class="biggrtxt">
+						<h1>My Projects</h1>
+
+						
+					</div>
+					
+					
+				</div>
+			</div>
+			<div>
+				</div>
+			</div>
+			<div class="scroll-downs">
+					<div class="mousey">
+						<div class="scroller"></div>
+					</div>
+					</div>
+	</div>
 			<div class="container">
 				
 				<?php while ( have_posts() ) : the_post(); ?>

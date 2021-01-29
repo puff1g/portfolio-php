@@ -1,0 +1,90 @@
+.block-projects-hero .bannerimage {
+  position: relative;
+  width: 100%;
+  z-index: 9;
+}
+.block-projects-hero .bannerimage .imaget img {
+  max-height: 100vh;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.block-projects-hero .bannerimage .Blureffect {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(16, 113, 151, 0.4);
+}
+.block-projects-hero .Maintxt {
+  z-index: 10;
+  width: 100%;
+  top: 25%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.block-projects-hero .Maintxt .smalltxt {
+  font-family: "OCR-A";
+  align-self: center;
+  justify-content: center;
+  font-size: 11px;
+  color: #FF3454;
+}
+.block-projects-hero .Maintxt .biggrtxt {
+  font-family: "OCR-A";
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  font-size: 40px;
+  color: white;
+}
+.block-projects-hero .Maintxt .buttonsban {
+  position: relative;
+  top: 70px;
+  align-self: center;
+  font-family: "OCR-A";
+}
+.block-projects-hero .Maintxt .buttonsban .button1 {
+  margin: 0px 20px;
+  border: white solid 1px;
+  background-color: transparent;
+  color: white;
+  padding: 18px 40px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+.block-projects-hero .Maintxt .buttonsban .button1:hover {
+  color: #FF3454;
+  border: #FF3454 solid 1px;
+  box-shadow: 5px 5px #FF3454;
+  margin: 0px 20px;
+  background-color: transparent;
+  padding: 18px 40px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+.block-projects-hero .Maintxt .buttonsban .button2 {
+  margin: 0px 20px;
+  border: #FF3454 solid 1px;
+  background-color: #FF3454;
+  color: white;
+  padding: 18px 40px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+.block-projects-hero .Maintxt .buttonsban .button2:hover {
+  border: white solid 1px;
+  background-color: transparent;
+}
