@@ -1,0 +1,51 @@
+.archive_projects{
+    margin-bottom: 20vh;
+
+    .container{
+        position: relative;
+        img{
+            width: 35%;
+            min-width: 35%;
+            position: relative;
+            object-fit: cover;
+        }
+        .textcontainer{
+            float: right;
+            width: 55%;
+            
+            span{
+                font-size: 20px;
+                font-weight: bold;
+            }
+            h1{
+                color: $secondary;
+                font-size: 50px;
+                font-weight: bold;
+            }
+            .excerpt{
+                color: $secondary;
+            }
+        }
+}
+}
+
+.Single_projects{
+    margin-bottom: 20vh;
+
+    .textcontainer{
+        text-align: center;
+        margin-bottom: 20vh;
+        span{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        h1{
+            color: $secondary;
+            font-size: 50px;
+        }
+
+        .excerpt{
+            color: $secondary;
+        }
+    }
+}

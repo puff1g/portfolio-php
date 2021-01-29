@@ -1,22 +1,44 @@
 <?php get_header(); ?>
 
-	<?php if ( have_posts() ) : ?>
+<?php if ( have_posts() ) : ?>
+		<div class="Single_projects">
+			<div class="container">
+				
+				<?php while ( have_posts() ) : the_post(); ?>
+				
+				<?php 
+				$oPost = get_post(get_the_id());
+				?>
+				<a href="<?php the_permalink(); ?>">
 
-		<div class="container">
+						
+							<div class="textcontainer">
+								
+								<div class="type"><?php 
+							$kat = get_the_terms ( $oPost->ID, "project_cat");
+							
+							foreach($kat as $key => $oTerm) {
+								
+								
+								?>
+								<span style="backgroundcolor: <?php echo get_field("term_color", "project_cat_".$oTerm->term_id ); ?>">The Case</span>
+								<?php 
+							}
+							?>
+							</div>
 
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php if ( has_post_thumbnail() ) : ?>
-					<?php the_post_thumbnail(); ?>
-				<?php endif; ?>
-
-				<h1 class="single-post-title"><?php the_title(); ?></h1>
-
-				<div class="content"><?php the_content(); ?></div>
-
-			<?php endwhile; ?>
-
-		</div>
+							<h1 class="archive-post-title"><?php echo $oPost->post_title; ?></h1>
+							<div class="excerpt"><?php the_excerpt(); ?></div>
+							
+						</div>
+					</a>
+					<?php if ( has_post_thumbnail() ) : ?>
+							<?php the_post_thumbnail(); ?>
+							<?php endif; ?>
+					<?php endwhile; ?>
+					
+				</div>
+			</div>
 
 	<?php endif; ?>
 

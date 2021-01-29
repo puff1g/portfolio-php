@@ -30,6 +30,7 @@
 
 		wp_enqueue_style( 'googlefonts', 'https://fonts.googleapis.com/css2?family=Goldman&display=swap', false, '1.0.0', 'all' );
 		wp_enqueue_style( 'wordpress-stylesheet', get_stylesheet_directory_uri() . '/style.css', false, filemtime(get_stylesheet_directory() . '/style.css'), 'all' );
+		wp_enqueue_style( 'custom-fontt', get_stylesheet_directory_uri() . '/lib/fonts/OCR-A.ttf', false, filemtime(get_stylesheet_directory() . '/lib/fonts/OCR-A.ttf'), 'all' );
 		wp_enqueue_style( 'layback-style', get_stylesheet_directory_uri() . '/lib/css/style.css', false, filemtime(get_stylesheet_directory() . '/lib/css/style.css'), 'all' );
 
 		/* This sites default javascript file

@@ -172,7 +172,7 @@
 
 body {
   height: 100vh;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+  font-family: "OCR-a";
   background-color: #fff;
   font-weight: 400;
   font-size: 0.876em;
@@ -237,7 +237,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+  font-family: "OCR-a", Arial, sans-serif;
 }
 
 h1 {
@@ -258,7 +258,7 @@ h2 {
 
 h3,
 .h3 {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+  font-family: "OCR-a", Arial, sans-serif;
   font-size: 1.5em;
   margin: 0 0 15px 0;
   padding: 0;
@@ -799,6 +799,10 @@ ol li {
   left: 0;
   top: 0;
 }
+.site-header body h1 {
+  font-family: "OCR-a" !important;
+  font-size: 100px;
+}
 .site-header .bannerimage {
   position: relative;
   width: 100%;
@@ -837,14 +841,14 @@ ol li {
   align-content: center;
 }
 .site-header .Maintxt .smalltxt {
-  font-family: "Goldman", cursive;
+  font-family: "OCR-a";
   align-self: center;
   justify-content: center;
   font-size: 11px;
   color: #FF3454;
 }
 .site-header .Maintxt .biggrtxt {
-  font-family: "Goldman", cursive;
+  font-family: "OCR-a";
   text-align: center;
   align-self: center;
   justify-content: center;
@@ -855,7 +859,7 @@ ol li {
   position: relative;
   top: 70px;
   align-self: center;
-  font-family: "Goldman", cursive;
+  font-family: "OCR-a";
 }
 .site-header .Maintxt .buttonsban .button1 {
   margin: 0px 20px;
@@ -1059,6 +1063,54 @@ ol li {
 }
 /* Pages
 ------------------------------------------------------*/
+.archive_projects {
+  margin-bottom: 20vh;
+}
+.archive_projects .container {
+  position: relative;
+}
+.archive_projects .container img {
+  width: 35%;
+  min-width: 35%;
+  position: relative;
+  object-fit: cover;
+}
+.archive_projects .container .textcontainer {
+  float: right;
+  width: 55%;
+}
+.archive_projects .container .textcontainer span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.archive_projects .container .textcontainer h1 {
+  color: #062E3E;
+  font-size: 50px;
+  font-weight: bold;
+}
+.archive_projects .container .textcontainer .excerpt {
+  color: #062E3E;
+}
+
+.Single_projects {
+  margin-bottom: 20vh;
+}
+.Single_projects .textcontainer {
+  text-align: center;
+  margin-bottom: 20vh;
+}
+.Single_projects .textcontainer span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.Single_projects .textcontainer h1 {
+  color: #062E3E;
+  font-size: 50px;
+}
+.Single_projects .textcontainer .excerpt {
+  color: #062E3E;
+}
+
 /* Vendors
 ------------------------------------------------------*/
 .slick-slider .slick-list .slick-track .slick-slide {

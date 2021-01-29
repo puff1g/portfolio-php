@@ -98,7 +98,7 @@ function ShowProjects_block_render_callback($block, $content = '', $is_preview =
 									?>		
 							</div>
 							<div class="actions">
-								<a href="#">
+								<a href="#"> <!-- //TODO SETUP href to php buttons thing -->
 									<button class="buttonview">View Project</button>
 								</a>
 							</div>

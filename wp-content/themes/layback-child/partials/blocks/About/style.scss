@@ -1,6 +1,7 @@
 @import '../../../lib/css/abstract/_variables.scss';
 
 .block-about {
+    font-family: $body-font!important;
     margin: 100px 0;
 
     .Maindata {

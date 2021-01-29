@@ -1,4 +1,5 @@
 .block-about {
+  font-family: "OCR-a" !important;
   margin: 100px 0;
 }
 .block-about .Maindata {
@@ -9,12 +10,12 @@
   flex-direction: row; */
 }
 .block-about .Maindata .Mainsubdata h2 {
-  font-family: "Goldman", cursive;
+  font-family: "OCR-a";
   font-size: 20px;
   color: #FF3454;
 }
 .block-about .Maindata .Mainsubdata h1 {
-  font-family: "Goldman", cursive;
+  font-family: "OCR-a";
   font-size: 40px;
   color: black;
 }

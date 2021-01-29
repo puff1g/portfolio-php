@@ -2,6 +2,7 @@
 ------------------------------------------------------*/
 
 .site-header {
+	
 	position: relative;
 	z-index: 1000;
 
@@ -17,10 +18,16 @@
 
 
 	body {
+		
 		height: 0;
 		widows: 0;
 		left: 0;
 		top: 0;
+
+		h1{
+			font-family: $body-font!important;
+			font-size: 100px;
+		}
 	}
 
 
