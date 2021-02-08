@@ -58,9 +58,8 @@ function tkeAbout_block_render_callback($block, $content = '', $is_preview = fal
 				<div class="Mainsubdata">
 					<h2>Who am i</h2>
 					<h1>Developer in Learning</h1>
-					<h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-						justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-						Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</h4>
+					<h4>My name is Thomas and im a 20 yr old developer currently on my 4th and last year of my developer education at TEC currently sitting in SKP and is looking for a intership! 
+						<br> A bit about me, in my spare time i love cars and gaming so i use alot of time at my pc not only because of my education but also in my spare time </h4>
 				</div>
 			</div>
 			<img class="smallimage" src="<?php echo wp_get_attachment_url(55); ?>">

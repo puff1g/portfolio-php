@@ -1085,14 +1085,14 @@ ol li {
   align-content: center;
 }
 .archive_projects .Maintxt .smalltxt {
-  font-family: "OCR-A";
+  font-family: "OCR-a";
   align-self: center;
   justify-content: center;
   font-size: 11px;
   color: #FF3454;
 }
 .archive_projects .Maintxt .biggrtxt {
-  font-family: "OCR-A";
+  font-family: "OCR-a";
   text-align: center;
   align-self: center;
   justify-content: center;
@@ -1103,7 +1103,7 @@ ol li {
   position: relative;
   top: 70px;
   align-self: center;
-  font-family: "OCR-A";
+  font-family: "OCR-a";
 }
 .archive_projects .Maintxt .buttonsban .button1 {
   margin: 0px 20px;
@@ -1237,14 +1237,14 @@ ol li {
   align-content: center;
 }
 .Single_projects .Maintxt .smalltxt {
-  font-family: "OCR-A";
+  font-family: "OCR-a";
   align-self: center;
   justify-content: center;
   font-size: 11px;
   color: #FF3454;
 }
 .Single_projects .Maintxt .biggrtxt {
-  font-family: "OCR-A";
+  font-family: "OCR-a";
   text-align: center;
   align-self: center;
   justify-content: center;
@@ -1255,7 +1255,7 @@ ol li {
   position: relative;
   top: 70px;
   align-self: center;
-  font-family: "OCR-A";
+  font-family: "OCR-a";
 }
 .Single_projects .Maintxt .buttonsban .button1 {
   margin: 0px 20px;

@@ -5,7 +5,7 @@
 		<div id="<?php echo $block_id; ?>" class="<?php if( !empty($block_align) ) { echo 'align-' . $block_align; } ?> block-<?php echo $block_name; ?>">
 		<div class="bannerimage">
 			<div class="imaget">
-				<img src="<?php echo wp_get_attachment_url(53); ?>">
+			<img src="<?php echo get_the_post_thumbnail_url(get_the_id()) ? get_the_post_thumbnail_url(get_the_id()) : wp_get_attachment_url(53); ?>" alt="">
 				
 				<div class="Blureffect"></div>
 
@@ -32,12 +32,8 @@
 				?>
 					<h1 class="archive-post-title"><?php echo $oPost->post_title; ?></h1>
 
-						
 					</div>
-					<div class="buttonsban">
-						<a href="#"><button class="button1">View Projects</button></a>
-						<a href="#"><button class="button2">Contact Me</button></a>
-					</div>
+					
 					
 				</div>
 			</div>
@@ -69,20 +65,16 @@
 								
 								
 								?>
-								<span style="backgroundcolor: <?php echo get_field("term_color", "project_cat_".$oTerm->term_id ); ?>">The Case</span>
 								<?php 
 							}
 							?>
 							</div>
 
-							<h1 class="archive-post-title"><?php echo $oPost->post_title; ?></h1>
-							<div class="excerpt"><?php the_excerpt(); ?></div>
+							<div class="excerpt"><?php add_filter('excerpt_length', function($length){return 999;}); the_excerpt(); ?></div> <!-- //TODO Fix Excerpt to diffrent than ex? --> 
 							
 						</div>
 					</a>
-					<?php if ( has_post_thumbnail() ) : ?>
-							<?php the_post_thumbnail(); ?>
-							<?php endif; ?>
+					
 					<?php endwhile; ?>
 					
 				</div>

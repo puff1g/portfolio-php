@@ -30,8 +30,8 @@
 				'render_callback'   => $render,
 				'enqueue_style' 	=> get_stylesheet_directory_uri() . '/partials/blocks/' . basename(__DIR__) . '/style.css',
 				'enqueue_script' 	=> get_stylesheet_directory_uri() . '/partials/blocks/' . basename(__DIR__) . '/script.js',
-	        ));
-	    }
+	));
+	}
 	}
 
 	function lb_register_Heroorender( $block, $content = '', $is_preview = false, $post_id = 0 )
@@ -51,7 +51,7 @@
 
 	?>
 	
-	    <div id="<?php echo $block_id; ?>" class="<?php if( !empty($block_align) ) { echo 'align-' . $block_align; } ?> block-<?php echo $block_name; ?>">
+	<div id="<?php echo $block_id; ?>" class="<?php if( !empty($block_align) ) { echo 'align-' . $block_align; } ?> block-<?php echo $block_name; ?>">
 		<div class="bannerimage">
 			<div class="imaget">
 				<img src="<?php echo wp_get_attachment_url(53); ?>">
@@ -67,14 +67,15 @@
 							apps & websites.</h1>
 					</div>
 					<div class="buttonsban">
-						<a href="#"><button class="button1">View Projects</button></a>
-						<a href="#"><button class="button2">Contact Me</button></a>
+						<a href="<?php echo get_post_type_archive_link( "project" ); ?>" ><button class="button1"> View Projects</button></a>
+						<a href="<?php echo get_post_type_archive_link( "" ); ?>"><button class="button2">Contact Me</button></a> <!-- //TODO Setup Permalinks to work so this can work -->
 					</div>
+					
 				</div>
 			</div>
 			<div>
 			</div>
 		</div>
-	    </div>
+	</div>
     
     <?php }
