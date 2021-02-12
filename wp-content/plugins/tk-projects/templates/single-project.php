@@ -53,7 +53,6 @@
 				<?php 
 				$oPost = get_post(get_the_id());
 				?>
-				<a href="<?php the_permalink(); ?>">
 
 						
 							<div class="textcontainer">
@@ -70,7 +69,9 @@
 							?>
 							</div>
 
-							<div class="excerpt"><?php add_filter('excerpt_length', function($length){return 999;}); the_excerpt(); ?></div> <!-- //TODO Fix Excerpt to diffrent than ex? --> 
+							<div class="excerpt">
+							<?php echo the_content($oPost -> post_content) ?>
+							</div>
 							
 						</div>
 					</a>

@@ -57,7 +57,6 @@
 				<img src="<?php echo wp_get_attachment_url(53); ?>">
 				
 				<div class="Blureffect"></div>
-
 				<div class="Maintxt">
 					<div class="smalltxt">
 						<h1>Developer in learning</h1>

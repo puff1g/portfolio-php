@@ -64,8 +64,7 @@ function ShowProjects_block_render_callback($block, $content = '', $is_preview =
 				$i = 1;
 				$posts = get_posts(array(
 					'numberposts'      => 3,
-					'orderby'          => 'date',
-					'order'            => 'ASC',
+					'orderby'          => 'rand',
 					'post_type'        => 'project',
 				));
 				foreach ($posts as $key => $oPost) {
@@ -94,11 +93,12 @@ function ShowProjects_block_render_callback($block, $content = '', $is_preview =
 							<div class="desc">
 								<?php
 								$str = apply_filters( 'the_content', $oPost->post_content);
+								$str = strip_tags($str);
 								echo  strlen($str) > 200 ? substr($str,0,200)."..." : $str;
 									?>		
 							</div>
 							<div class="actions">
-								<a href="#"> <!-- //TODO SETUP href to php buttons thing -->
+								<a href="<?php echo get_permalink($oPost->ID) ?>">
 									<button class="buttonview">View Project</button>
 								</a>
 							</div>
