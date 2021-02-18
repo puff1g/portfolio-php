@@ -16,6 +16,7 @@ msgid "Our default theme for 2020 is designed to take full advantage of the flex
 msgstr "Vores standardtema for 2020 er designet til at udnytte fleksibiliteten i blok-editoren fuldt ud. Organisationer og virksomheder har mulighed for at oprette dynamiske landingssider med endeløse layouts ved hjælp af gruppe- og kolonne blokke. Kolonnencentreret indhold og finjusteret typografi gør den også perfekt til traditionelle blogs. Komplette redigeringstypografier giver dig en god ide om, hvordan dit indhold vil se ud, selv før du udgiver. Du kan give dit websted et personligt præg ved at ændre baggrundsfarverne og markeringsfarven i tilpasseren. Farverne på alle elementer på dit website beregnes automatisk ud fra de farver, du vælger, hvilket sikrer en høj, tilgængelig farvekontrast for dine besøgende."
 
 #. Theme Name of the theme
+#: inc/block-patterns.php:20
 msgid "Twenty Twenty"
 msgstr "Twenty Twenty"
 
@@ -27,74 +28,64 @@ msgstr "Vis forfatterbio"
 msgid "View Archive <span aria-hidden=\"true\">&rarr;</span>"
 msgstr "Vis arkiv <span aria-hidden=\"true\">&rarr;</span>"
 
-#: inc/starter-content.php:38
+#: inc/starter-content.php:39
 msgctxt "Theme starter content"
 msgid "The New UMoMA Opens its Doors"
 msgstr "Det nye UMoMA åbner dørene"
 
-#: inc/template-tags.php:393
+#: inc/template-tags.php:396
 msgctxt "A string that is output before one or more categories"
 msgid "In"
 msgstr "I"
 
-#: inc/starter-content.php:150
+#: inc/starter-content.php:151
 msgid "Join the Club"
 msgstr "Tilmeld dig klubben"
 
-#: inc/starter-content.php:147
+#: inc/starter-content.php:148 inc/block-patterns.php:45
 msgid "Members get access to exclusive exhibits and sales. Our memberships cost $99.99 and are billed annually."
 msgstr "Medlemmer får adgang til eksklusive udstillinger og salg. Vores medlemskaber koster €99,99 og faktureres årligt."
 
-#: inc/starter-content.php:144
+#: inc/starter-content.php:145
 msgid "Become a Member and Get Exclusive Offers!"
 msgstr "Bliv medlem og få eksklusive tilbud!"
 
-#: inc/starter-content.php:136
+#: inc/starter-content.php:137
 msgid "The exhibitions are produced by UMoMA in collaboration with artists and museums around the world and they often attract international attention. UMoMA has received a Special Commendation from the European Museum of the Year, and was among the top candidates for the Swedish Museum of the Year Award as well as for the Council of Europe Museum Prize."
 msgstr "Udstillingerne er produceret af UMoMA i samarbejde med kunstnere og museer rundt om i verden, og de tiltrækker ofte international opmærksomhed. UMoMA har modtaget en særlig udmærkelse fra det europæiske Museum of the Year, og var blandt de bedste kandidater til årets svenske Museums pris samt til Europarådets Museums pris."
 
-#: inc/starter-content.php:133
-msgid "With seven floors of striking architecture, UMoMA shows exhibitions of international contemporary art, sometimes along with art historical retrospectives. Existential, political and philosophical issues are intrinsic to our programme. As visitor you are invited to guided tours artist talks, lectures, film screenings and other events with free admission"
-msgstr "Med syv etager af slående arkitektur, viser UMoMA udstillinger med international samtidskunst, nogle gange sammen med kunsthistoriske retrospektiver. Eksistentielle, politiske og filosofiske spørgsmål er iboende i vores program. Som besøgende inviteres du til guidede ture, samtaler med kunstnere, foredrag, filmforevisninger og andre arrangementer med gratis adgang"
-
-#: inc/starter-content.php:129
+#: inc/starter-content.php:130
 msgid "&#8220;Cyborgs, as the philosopher Donna Haraway established, are not reverent. They do not remember the cosmos.&#8221;"
 msgstr "\"Cyborgs, som filosoffen Donna Haraway beskrev det, er ikke ærbødige. De kan ikke huske kosmos. \""
 
-#: inc/starter-content.php:113
+#: inc/starter-content.php:114
 msgid "From Signac to Matisse"
 msgstr "Fra Signac til Matisse"
 
-#: inc/starter-content.php:98
+#: inc/starter-content.php:99 inc/block-patterns.php:168
 msgid "The Life I Deserve"
 msgstr "Det liv, jeg fortjener"
 
-#: inc/starter-content.php:84 inc/starter-content.php:116
-msgid "October 1 -- December 1"
-msgstr "1. oktober -- 1. december "
-
-#: inc/starter-content.php:81
+#: inc/starter-content.php:82
 msgid "Theatre of Operations"
 msgstr "Operations teater"
 
-#: inc/starter-content.php:72 inc/starter-content.php:87
-#: inc/starter-content.php:104 inc/starter-content.php:119
+#: inc/starter-content.php:73 inc/starter-content.php:88
+#: inc/starter-content.php:105 inc/starter-content.php:120
+#: inc/block-patterns.php:78 inc/block-patterns.php:160
+#: inc/block-patterns.php:174
 msgid "Read More"
 msgstr "Læs mere"
 
-#: inc/starter-content.php:69 inc/starter-content.php:101
+#: inc/starter-content.php:70 inc/starter-content.php:102
 msgid "August 1 -- December 1"
 msgstr "1. august -- 1. december"
 
-#: inc/starter-content.php:66
+#: inc/starter-content.php:67 inc/block-patterns.php:154
 msgid "Works and Days"
 msgstr "Værker og dage"
 
-#: inc/starter-content.php:55
-msgid "The premier destination for modern art in Northern Sweden. Open from 10 AM to 6 PM every day during the summer months."
-msgstr "Den førende destination for moderne kunst i det nordlige Sverige. Åben fra 10.00 til 18.00 hver dag i sommermånederne."
-
-#: inc/starter-content.php:47
+#: inc/starter-content.php:48
 msgid "The New UMoMA Opens its Doors"
 msgstr "Det nye UMoMA åbner dørene"
 
@@ -126,23 +117,27 @@ msgstr "Indstillinger for sideskabelonen \"Forsideskabelon\". Tilføj et udvalgt
 msgid "Apply a custom color for links, buttons, featured images."
 msgstr "Anvend en brugerdefineret farve til links, knapper, udvalgte billeder."
 
-#: classes/class-twentytwenty-customize.php:126
-msgid "Custom"
-msgstr "Tilpasset"
-
-#: classes/class-twentytwenty-customize.php:125
-msgid "Default"
-msgstr "Standard"
-
 #: classes/class-twentytwenty-customize.php:123
 msgid "Primary Color"
 msgstr "Primær farve"
+
+#: inc/starter-content.php:134
+msgid "With seven floors of striking architecture, UMoMA shows exhibitions of international contemporary art, sometimes along with art historical retrospectives. Existential, political and philosophical issues are intrinsic to our programme. As visitor you are invited to guided tours artist talks, lectures, film screenings and other events with free admission"
+msgstr "Med syv etager af slående arkitektur, viser UMoMA udstillinger med international samtidskunst, nogle gange sammen med kunsthistoriske retrospektiver. Eksistentielle, politiske og filosofiske spørgsmål er iboende i vores program. Som besøgende inviteres du til guidede ture, samtaler med kunstnere, foredrag, filmforevisninger og andre arrangementer med gratis adgang"
+
+#: inc/starter-content.php:85 inc/starter-content.php:117
+msgid "October 1 -- December 1"
+msgstr "1. oktober -- 1. december "
+
+#: inc/starter-content.php:56
+msgid "The premier destination for modern art in Northern Sweden. Open from 10 AM to 6 PM every day during the summer months."
+msgstr "Den førende destination for moderne kunst i det nordlige Sverige. Åben fra 10.00 til 18.00 hver dag i sommermånederne."
 
 #: searchform.php:24 template-parts/modal-search.php:20
 msgid "Search for:"
 msgstr "Søg efter:"
 
-#: index.php:99
+#: index.php:101
 msgid "search again"
 msgstr "søg igen"
 
@@ -163,7 +158,8 @@ msgstr "Op %s"
 msgid "To the top %s"
 msgstr "Til toppen %s"
 
-#. translators: Copyright date format, see https://www.php.net/date
+#. translators: Copyright date format, see
+#. https://www.php.net/manual/datetime.format.php
 #: footer.php:25
 msgctxt "copyright date format"
 msgid "Y"
@@ -173,9 +169,17 @@ msgstr "Y"
 msgid "404 not found"
 msgstr "404 ikke fundet"
 
-#. Template Name of the theme
-msgid "Full Width Template"
-msgstr "Fuld bredde skabelon"
+#: comments.php:127
+msgid "Comments are closed."
+msgstr "Lukket for kommentarer."
+
+#: inc/starter-content.php:197
+msgid "Social Links Menu"
+msgstr "Menu til sociale links"
+
+#: template-parts/content.php:48 template-parts/content-cover.php:138
+msgid "Pages:"
+msgstr "Sider:"
 
 #: template-parts/pagination.php:25
 msgid "Older <span class=\"nav-short\">Posts</span>"
@@ -197,14 +201,6 @@ msgstr "Luk søgning"
 msgid "Expanded Social links"
 msgstr "Udvidede sociale links"
 
-#: template-parts/modal-menu.php:73
-msgid "Mobile"
-msgstr "Mobil"
-
-#: template-parts/modal-menu.php:48
-msgid "Expanded"
-msgstr "Udvidet"
-
 #: template-parts/modal-menu.php:21
 msgid "Close Menu"
 msgstr "Luk Menu"
@@ -218,15 +214,11 @@ msgid "Footer"
 msgstr "Sidefod"
 
 #. translators: %s: Author name.
-#: inc/template-tags.php:354 template-parts/entry-author-bio.php:20
+#: inc/template-tags.php:357 template-parts/entry-author-bio.php:20
 msgid "By %s"
 msgstr "Af %s"
 
-#: template-parts/content-cover.php:138 template-parts/content.php:48
-msgid "Pages:"
-msgstr "Sider:"
-
-#: template-parts/content-cover.php:138 template-parts/content.php:48
+#: template-parts/content.php:48 template-parts/content-cover.php:138
 msgid "Page"
 msgstr "Side"
 
@@ -252,159 +244,118 @@ msgstr "Vi kunne ikke finde nogen resultater til din søgning. Du kan prøve ige
 msgid "Search:"
 msgstr "Søg:"
 
-#. translators: %s: Post title. Only visible to screen readers.
-#: inc/template-tags.php:206
-msgid "Edit <span class=\"screen-reader-text\">%s</span>"
-msgstr "Rediger <span class=\"screen-reader-text\" >%s</span>"
-
-#: inc/template-tags.php:445
-msgid "Sticky post"
-msgstr "Fastgjort indlæg"
-
-#: inc/template-tags.php:407
+#: inc/template-tags.php:410
 msgid "Tags"
 msgstr "Tags"
 
-#: inc/template-tags.php:389 template-parts/entry-header.php:36
+#: inc/template-tags.php:392 template-parts/entry-header.php:36
 #: template-parts/content-cover.php:70
 msgid "Categories"
 msgstr "Kategorier"
 
-#: inc/template-tags.php:371
+#: inc/template-tags.php:374
 msgid "Post date"
 msgstr "Indlægsdato"
 
-#: inc/template-tags.php:347
+#: inc/template-tags.php:350
 msgid "Post author"
 msgstr "Indlægsforfatter"
 
-#: inc/starter-content.php:196
-msgid "Social Links Menu"
-msgstr "Menu til sociale links"
-
-#: inc/starter-content.php:176 inc/starter-content.php:186 functions.php:492
+#: inc/starter-content.php:177 inc/starter-content.php:187
 msgid "Primary"
 msgstr "Primær"
-
-#: header.php:88
-msgid "Horizontal"
-msgstr "Vandret"
 
 #: header.php:76 header.php:137
 msgid "Menu"
 msgstr "Menu"
 
-#: header.php:53 header.php:157
-msgid "Search"
-msgstr "Søg"
-
 #: template-parts/content.php:36
 msgid "Continue reading"
 msgstr "Fortsæt læsning"
 
-#: functions.php:549
+#: functions.php:550
 msgctxt "Short name of the larger font size in the block editor."
 msgid "XL"
 msgstr "XL"
 
-#: functions.php:548
+#: functions.php:549
 msgctxt "Name of the larger font size in the block editor"
 msgid "Larger"
 msgstr "Større"
 
-#: functions.php:543
+#: functions.php:544
 msgctxt "Short name of the large font size in the block editor."
 msgid "L"
 msgstr "L"
 
-#: functions.php:542
+#: functions.php:543
 msgctxt "Name of the large font size in the block editor"
 msgid "Large"
 msgstr "Stor"
 
-#: functions.php:537
+#: functions.php:538
 msgctxt "Short name of the regular font size in the block editor."
 msgid "M"
 msgstr "M"
 
-#: functions.php:536
+#: functions.php:537
 msgctxt "Name of the regular font size in the block editor"
 msgid "Regular"
 msgstr "Almindelig"
 
-#: functions.php:531
+#: functions.php:532
 msgctxt "Short name of the small font size in the block editor."
 msgid "S"
 msgstr "S"
 
-#: functions.php:530
+#: functions.php:531
 msgctxt "Name of the small font size in the block editor"
 msgid "Small"
 msgstr "Lille"
 
-#: functions.php:515
+#: functions.php:516
 msgid "Background Color"
 msgstr "Baggrundsfarve"
 
-#: functions.php:502
+#: functions.php:503
 msgid "Subtle Background"
 msgstr "Diskret baggrund"
 
-#: functions.php:497
-msgid "Secondary"
-msgstr "Sekundær"
-
-#: functions.php:487
-msgid "Accent Color"
-msgstr "Accentfarve"
-
-#: functions.php:380
+#: functions.php:383
 msgid "Widgets in this area will be displayed in the second column in the footer."
 msgstr "Widgets i dette område vil blive vist i den anden kolonne i sidefoden."
 
-#: functions.php:378
+#: functions.php:381
 msgid "Footer #2"
 msgstr "Sidefod #2"
 
-#: functions.php:368
+#: functions.php:371
 msgid "Widgets in this area will be displayed in the first column in the footer."
 msgstr "Widgets i dette område vil blive vist i den første kolonne i sidefoden."
 
-#: functions.php:366
+#: functions.php:369
 msgid "Footer #1"
 msgstr "Sidefod #1"
 
-#: functions.php:341
+#: functions.php:344
 msgid "Skip to the content"
 msgstr "Spring til indholdet"
 
-#: functions.php:262
+#: functions.php:266
 msgid "Social Menu"
 msgstr "Social menu"
 
-#: functions.php:261
+#: functions.php:265
 msgid "Footer Menu"
 msgstr "Sidefod Menu"
 
-#: functions.php:260
+#: functions.php:264
 msgid "Mobile Menu"
 msgstr "Mobil menu"
-
-#: functions.php:259
-msgid "Desktop Expanded Menu"
-msgstr "Computer udvidet menu"
-
-#: functions.php:258
-msgid "Desktop Horizontal Menu"
-msgstr "Computer vandret menu"
 
 #: footer.php:33
 msgid "Powered by WordPress"
 msgstr "Drevet af WordPress"
-
-#: comments.php:127
-msgid "Comments are closed."
-msgstr "Lukket for kommentarer."
 
 #: comments.php:88
 msgid "Comments"
@@ -436,7 +387,7 @@ msgstr "En kommentar til &ldquo;%s&rdquo;"
 msgid "Leave a comment"
 msgstr "Skriv en kommentar"
 
-#: classes/class-twentytwenty-walker-page.php:107 inc/template-tags.php:555
+#: classes/class-twentytwenty-walker-page.php:107 inc/template-tags.php:558
 msgid "Show sub menu"
 msgstr "Vis undermenu"
 
@@ -445,20 +396,12 @@ msgstr "Vis undermenu"
 msgid "#%d (no title)"
 msgstr "#%d (ingen titel)"
 
-#: classes/class-twentytwenty-walker-comment.php:127
-msgid "By Post Author"
-msgstr "Af indlæggets forfatter"
-
-#: classes/class-twentytwenty-walker-comment.php:92
+#: classes/class-twentytwenty-walker-comment.php:98
 msgid "Your comment is awaiting moderation."
 msgstr "Din kommentar afventer godkendelse."
 
-#: classes/class-twentytwenty-walker-comment.php:77
-msgid "Edit"
-msgstr "Rediger"
-
 #. translators: 1: Comment date, 2: Comment time.
-#: classes/class-twentytwenty-walker-comment.php:69
+#: classes/class-twentytwenty-walker-comment.php:68
 msgid "%1$s at %2$s"
 msgstr "%1$s kl. %2$s"
 
@@ -470,10 +413,6 @@ msgstr "siger:"
 msgid "Make sure that the contrast is high enough so that the text is readable."
 msgstr "Sørg for, at kontrasten er høj nok til, at teksten kan læses."
 
-#: classes/class-twentytwenty-customize.php:306
-msgid "Creates a parallax effect when the visitor scrolls."
-msgstr "Skaber en parallaxeffekt, når den besøgende ruller."
-
 #: classes/class-twentytwenty-customize.php:305
 msgid "Fixed Background Image"
 msgstr "Fast baggrundsbillede"
@@ -483,17 +422,9 @@ msgstr "Fast baggrundsbillede"
 msgid "Cover Template"
 msgstr "Forsideskabelon"
 
-#: classes/class-twentytwenty-customize.php:270
-msgid "Summary"
-msgstr "Resume"
-
 #: classes/class-twentytwenty-customize.php:269
 msgid "Full text"
 msgstr "Fuld tekst"
-
-#: classes/class-twentytwenty-customize.php:267
-msgid "On archive pages, posts show:"
-msgstr "På arkivsider, vis indlæg:"
 
 #: classes/class-twentytwenty-customize.php:225
 msgid "Show search in header"
@@ -522,6 +453,51 @@ msgstr "Den side, du ledte efter, blev ikke fundet. Den kan være blevet fjernet
 #: 404.php:17
 msgid "Page Not Found"
 msgstr "Siden blev ikke fundet"
+
+#. Template Name of the theme
+msgid "Full Width Template"
+msgstr "Fuld bredde skabelon"
+
+#. translators: %s: Post title. Only visible to screen readers.
+#: inc/template-tags.php:207
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "Rediger <span class=\"screen-reader-text\" >%s</span>"
+
+#: inc/template-tags.php:448
+msgid "Sticky post"
+msgstr "Fastgjort indlæg"
+
+#: functions.php:488
+msgid "Accent Color"
+msgstr "Accentfarve"
+
+#: functions.php:263
+msgid "Desktop Expanded Menu"
+msgstr "Computer udvidet menu"
+
+#: functions.php:262
+msgid "Desktop Horizontal Menu"
+msgstr "Computer vandret menu"
+
+#: classes/class-twentytwenty-walker-comment.php:133
+msgid "By Post Author"
+msgstr "Af indlæggets forfatter"
+
+#: classes/class-twentytwenty-walker-comment.php:82
+msgid "Edit"
+msgstr "Rediger"
+
+#: classes/class-twentytwenty-customize.php:306
+msgid "Creates a parallax effect when the visitor scrolls."
+msgstr "Skaber en parallaxeffekt, når den besøgende ruller."
+
+#: classes/class-twentytwenty-customize.php:270
+msgid "Summary"
+msgstr "Resume"
+
+#: classes/class-twentytwenty-customize.php:267
+msgid "On archive pages, posts show:"
+msgstr "På arkivsider, vis indlæg:"
 
 #. Author URI of the theme
 #: footer.php:32

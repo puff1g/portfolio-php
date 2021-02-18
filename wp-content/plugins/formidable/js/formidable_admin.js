@@ -375,7 +375,7 @@ function frmAdminBuildJS() {
 	}
 
 	function confirmModal( link ) {
-		var i, dataAtts,
+		var caution, verify, $confirmMessage, frmCaution, i, dataAtts,
 			$info = initModal( '#frm_confirm_modal', '400px' ),
 			continueButton = document.getElementById( 'frm-confirmed-click' );
 
@@ -383,10 +383,21 @@ function frmAdminBuildJS() {
 			return false;
 		}
 
-		var caution = link.getAttribute( 'data-frmcaution' );
-		var cautionHtml = caution ? '<span class="frm-caution">' + caution + '</span> ' : '';
+		caution = link.getAttribute( 'data-frmcaution' );
+		verify = link.getAttribute( 'data-frmverify' );
+		$confirmMessage = jQuery( '.frm-confirm-msg' );
+		$confirmMessage.empty();
 
-		jQuery( '.frm-confirm-msg' ).html( cautionHtml + link.getAttribute( 'data-frmverify' ) );
+		if ( caution ) {
+			frmCaution = document.createElement( 'span' );
+			frmCaution.classList.add( 'frm-caution' );
+			frmCaution.appendChild( document.createTextNode( caution ) );
+			$confirmMessage.append( frmCaution );
+		}
+
+		if ( verify ) {
+			$confirmMessage.append( document.createTextNode( verify ) );
+		}
 
 		removeAtts = continueButton.dataset;
 		for ( i in dataAtts ) {
@@ -2226,7 +2237,7 @@ function frmAdminBuildJS() {
 		if ( $self.is( ':checked' ) ) {
 			uncheck = function() {
 				setTimeout( function() {
-					$self.removeAttr( 'checked' );
+					$self.prop( 'checked', false );
 				}, 0 );
 			};
 			unbind = function() {
@@ -3741,12 +3752,12 @@ function frmAdminBuildJS() {
 			if ( typeof requires === 'undefined' || requires === null || requires === '' ) {
 				requires = 'Pro';
 			}
-			jQuery( '.license-level' ).html( requires );
+			jQuery( '.license-level' ).text( requires );
 
 			// If one click upgrade, hide other content
 			addOneClickModal( this );
 
-			jQuery( '.frm_feature_label' ).html( this.getAttribute( 'data-upgrade' ) );
+			jQuery( '.frm_feature_label' ).text( this.getAttribute( 'data-upgrade' ) );
 			jQuery( '#frm_upgrade_modal h2' ).show();
 
 			$info.dialog( 'open' );
@@ -5364,10 +5375,10 @@ function frmAdminBuildJS() {
 		var exportField = jQuery( 'input[name="frm_export_forms[]"]' );
 		if ( c === 'single' ) {
 			exportField.prop( 'multiple', false );
-			exportField.removeAttr( 'checked' );
+			exportField.prop( 'checked', false );
 		} else {
 			exportField.prop( 'multiple', true );
-			exportField.removeAttr( 'disabled' );
+			exportField.prop( 'disabled', false );
 		}
 	}
 
@@ -5380,13 +5391,13 @@ function frmAdminBuildJS() {
 		if ( count === 'single' ) {
 			// Disable all other fields to prevent multiple selections.
 			if ( this.checked ) {
-				exportField.attr( 'disabled', true );
+				exportField.prop( 'disabled', true );
 				this.removeAttribute( 'disabled' );
 			} else {
-				exportField.removeAttr( 'disabled' );
+				exportField.prop( 'disabled', false );
 			}
 		} else {
-			exportField.removeAttr( 'disabled' );
+			exportField.prop( 'disabled', false );
 		}
 	}
 
@@ -5678,6 +5689,18 @@ function frmAdminBuildJS() {
 			transitionToAddDetails( $modal, name, link, action );
 		});
 
+		// Welcome page modals.
+		jQuery( document ).on( 'click', '.frm-create-blank-form', function( event ) {
+			event.preventDefault();
+			jQuery( '.frm-trigger-new-form-modal' ).trigger( 'click' );
+			transitionToAddDetails( $modal, '', '', 'frm_install_form' );
+
+			// Close the modal with the cancel button.
+			jQuery( '.frm-modal-cancel.frm-back-to-all-templates' ).on( 'click', function() {
+				jQuery( '.ui-widget-overlay' ).trigger( 'click' );
+			});
+		});
+
 		jQuery( document ).on( 'click', '.frm-featured-forms.frm-templates-list li [role="button"]:not(a), .frm-templates-list .accordion-section.open li [role="button"]:not(a)', function( event ) {
 			var $hoverIcons, $trigger,
 				$li = jQuery( this ).closest( 'li' ),
@@ -5796,7 +5819,7 @@ function frmAdminBuildJS() {
 			}
 
 			$hiddenForm = jQuery( '#frmapi-email-form' ).find( 'form' );
-			$hiddenEmailField = $hiddenForm.find( '[type="email"]' );
+			$hiddenEmailField = $hiddenForm.find( '[type="email"]' ).not( '.frm_verify' );
 			if ( ! $hiddenEmailField.length ) {
 				return;
 			}
@@ -6031,7 +6054,7 @@ function frmAdminBuildJS() {
 				jQuery( this ).autocomplete( 'option', 'appendTo', $container );
 			}
 		})
-		.focus( function() {
+		.on( 'focus', function() {
 			// Show options on click to make it work more like a dropdown.
 			if ( this.value === '' || this.nextElementSibling.value < 1 ) {
 				jQuery( this ).autocomplete( 'search', this.value );
@@ -6588,7 +6611,7 @@ function frmAdminBuildJS() {
 			});
 
 			jQuery( '.frm_form_builder form' ).first().on( 'submit', function() {
-				jQuery( '.inplace_field' ).blur();
+				jQuery( '.inplace_field' ).trigger( 'blur' );
 			});
 
 			initiateMultiselect();
@@ -7033,7 +7056,7 @@ function frmAdminBuildJS() {
 					target.parent().addClass( 'tabs' );
 
 					// select the search bar
-					jQuery( '.quick-search', wrapper ).focus();
+					jQuery( '.quick-search', wrapper ).trigger( 'focus' );
 
 					e.preventDefault();
 				}
@@ -7214,20 +7237,12 @@ function frm_show_div( div, value, showIf, classId ) { // eslint-disable-line ca
 }
 
 function frmCheckAll( checked, n ) {
-	if ( checked ) {
-		jQuery( 'input[name^="' + n + '"]' ).attr( 'checked', 'checked' );
-	} else {
-		jQuery( 'input[name^="' + n + '"]' ).removeAttr( 'checked' );
-	}
+	jQuery( 'input[name^="' + n + '"]' ).prop( 'checked', ! ! checked );
 }
 
 function frmCheckAllLevel( checked, n, level ) {
 	var $kids = jQuery( '.frm_catlevel_' + level ).children( '.frm_checkbox' ).children( 'label' );
-	if ( checked ) {
-		$kids.children( 'input[name^="' + n + '"]' ).attr( 'checked', 'checked' );
-	} else {
-		$kids.children( 'input[name^="' + n + '"]' ).removeAttr( 'checked' );
-	}
+	$kids.children( 'input[name^="' + n + '"]' ).prop( 'checked', ! ! checked );
 }
 
 function frm_add_logic_row( id, formId ) { // eslint-disable-line camelcase

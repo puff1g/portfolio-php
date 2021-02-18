@@ -67,7 +67,7 @@
 					</div>
 					<div class="buttonsban">
 						<a href="<?php echo get_post_type_archive_link( "project" ); ?>" ><button class="button1"> View Projects</button></a>
-						<a href="<?php echo get_post_type_archive_link( "" ); ?>"><button class="button2">Contact Me</button></a> <!-- //TODO Setup Permalinks to work so this can work -->
+						<a href="<?php echo get_post_type_archive_link( "68" ); ?>"><button class="button2">Contact Me</button></a> <!-- //TODO Setup Permalinks to work so this can work -->
 					</div>
 					
 				</div>
