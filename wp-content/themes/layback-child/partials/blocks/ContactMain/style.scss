@@ -1,0 +1,17 @@
+@import '../../../lib/css/abstract/_variables.scss';
+
+.page-content{
+    display: block;
+        width: 60%;
+        margin: auto;
+    .space{
+        
+        height: 20vh;
+        padding-top: 14vh;
+        h1{
+            text-align: center;
+        }
+    }
+}
+
+
