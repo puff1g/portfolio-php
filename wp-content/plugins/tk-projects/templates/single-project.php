@@ -76,6 +76,13 @@
 						</div>
 					</a>
 					
+				<div class="test">
+				<!-- <img src="<?php echo get_the_post_thumbnail_url(get_the_id()) ? 
+				get_the_post_thumbnail_url(get_the_id()) : wp_get_attachment_url(53); ?>" alt="">		
+				-->
+
+
+				</div>
 					<?php endwhile; ?>
 					
 				</div>

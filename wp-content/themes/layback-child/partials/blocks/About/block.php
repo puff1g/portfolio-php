@@ -62,7 +62,7 @@ function tkeAbout_block_render_callback($block, $content = '', $is_preview = fal
 						<br> A bit about me, in my spare time i love cars and gaming so i use alot of time at my pc not only because of my education but also in my spare time </h4>
 				</div>
 			</div>
-			<img class="smallimage" src="<?php echo wp_get_attachment_url(55); ?>">
+			<img class="smallimage" src="<?php echo wp_get_attachment_url(114); ?>">
 		</div>
 	</div>
 	</div>

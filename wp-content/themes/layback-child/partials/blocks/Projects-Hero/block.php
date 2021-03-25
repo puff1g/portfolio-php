@@ -54,7 +54,7 @@
 	<div id="<?php echo $block_id; ?>" class="<?php if( !empty($block_align) ) { echo 'align-' . $block_align; } ?> block-<?php echo $block_name; ?>">
 		<div class="bannerimage">
 			<div class="imaget">
-				<img src="<?php echo wp_get_attachment_url(53); ?>">
+				<img src="<?php echo wp_get_attachment_url(116); ?>">
 				
 				<div class="Blureffect"></div>
 
