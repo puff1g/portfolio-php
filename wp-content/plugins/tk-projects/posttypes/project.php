@@ -1,72 +1,72 @@
 <?php
 
-	 if(!function_exists('lb_flush_rewrite_rules'))
-	 {
+	if(!function_exists('lb_flush_rewrite_rules'))
+	{
 		
 	 	//  Flush rewrite rules
-	 	add_action( 'after_switch_theme', 'lb_flush_rewrite_rules' );
-	 	function lb_flush_rewrite_rules() {
-	 		flush_rewrite_rules();
-	 	}
+	add_action( 'after_switch_theme', 'lb_flush_rewrite_rules' );
+	function lb_flush_rewrite_rules() {
+		flush_rewrite_rules();
+	}
 
-	 }
+	}
 
-	 add_action( 'init', 'lb_posttype_custom_project' );
-	 function lb_posttype_custom_project() {
-	   
+	add_action( 'init', 'lb_posttype_custom_project' );
+	function lb_posttype_custom_project() {
+	
 	    //  Write these variables as all lowercase
 
 	 	//  Post variables
-	 	$singular 				= __('project', 'layback');
-	 	$multiple 				= __('projects', 'layback');
-	 	$description 			= __( 'This is a default project post description', 'layback' );
-	 	$single_slug 			= $singular;
-	 	$archive_slug 			= $multiple;
-	 	$menu_name 				= $multiple;
-	 	$post_type_name 		= 'project';
+	$singular 				= __('project', 'layback');
+	$multiple 				= __('projects', 'layback');
+	$description 			= __( 'This is a default project post description', 'layback' );
+	$single_slug 			= $singular;
+	$archive_slug 			= $multiple;
+	$menu_name 				= $multiple;
+	$post_type_name 		= 'project';
 
-	 	//  Category variables
-	 	$taxonomy_name 			= $post_type_name . '_cat';
-	 	$taxonomy_singular 		= __('category', 'layback');
-	 	$taxonomy_multiple 		= __('categories', 'layback');
-	 	$taxonomy_menuname 		= $taxonomy_multiple;
-	 	$taxonomy_slug 			= $taxonomy_singular;
+	//  Category variables
+	$taxonomy_name 			= $post_type_name . '_cat';
+	$taxonomy_singular 		= __('category', 'layback');
+	$taxonomy_multiple 		= __('categories', 'layback');
+	$taxonomy_menuname 		= $taxonomy_multiple;
+	$taxonomy_slug 			= $taxonomy_singular;
 
-	 	//  Tag variables
-	 	$tag_name 				= $post_type_name . '_tag';
-	 	$tag_singular	 		= __('tag', 'layback');
-	 	$tag_multiple			= __('tags', 'layback');
-	 	$tag_menuname			= $tag_multiple;
-	 	$tag_slug				= $tag_singular;
+	//  Tag variables
+	$tag_name 				= $post_type_name . '_tag';
+	$tag_singular	 		= __('tag', 'layback');
+	$tag_multiple			= __('tags', 'layback');
+	$tag_menuname			= $tag_multiple;
+	$tag_slug				= $tag_singular;
 
-	 	register_post_type(
-	 		$post_type_name,
-	 		array(
-	 			'labels' 				=> array(
-	 				'name'                 => ucfirst($multiple),
-	 				'singular_name'        => ucfirst($singular),
-	 				'all_items'            => __( 'All', 'layback' ).' '.$multiple,
-	 				'add_new'              => __( 'Add new', 'layback' ),
-	 				'add_new_item'         => __( 'Add new', 'layback' ).' '.$singular,
-	 				'edit'                 => __( 'Edit', 'layback' ),
-	 				'edit_item'            => __( 'Edit', 'layback' ).' '.$singular,
-	 				'new_item'             => __( 'New', 'layback' ).' '.$singular,
-	 				'view_item'            => __( 'View', 'layback' ).' '.$singular,
-	 				'search_items'         => __( 'Search for', 'layback' ).' '.$singular,
-	 				'not_found'            =>  __( 'Nothing found in the database', 'layback' ),
-	 				'not_found_in_trash'   => __( 'The trash is empty', 'layback' ),
-	 				'parent_item_colon'    => ''
-	 			),
-	 			'menu_name'             => ucfirst($menu_name),
-	 			'description'			=> $description,
-	 			'public'				=> true,
-	 			'publicly_queryable'	=> true,
-	 			'exclude_from_search'	=> false,
-	 			'show_ui'				=> true,
-	 			'query_var'				=> true,
-	 			'menu_position'			=> null,
-	 			'menu_icon'				=> 'dashicons-admin-post',
-	 			'rewrite'				=> array(
+	register_post_type(
+	 	$post_type_name,
+	 	array(
+	 		'labels' 				=> array(
+			'name'                 => ucfirst($multiple),
+			'singular_name'        => ucfirst($singular),
+			'all_items'            => __( 'All', 'layback' ).' '.$multiple,
+			'add_new'              => __( 'Add new', 'layback' ),
+			'add_new_item'         => __( 'Add new', 'layback' ).' '.$singular,
+			'edit'                 => __( 'Edit', 'layback' ),
+			'edit_item'            => __( 'Edit', 'layback' ).' '.$singular,
+			'new_item'             => __( 'New', 'layback' ).' '.$singular,
+			'view_item'            => __( 'View', 'layback' ).' '.$singular,
+			'search_items'         => __( 'Search for', 'layback' ).' '.$singular,
+			'not_found'            =>  __( 'Nothing found in the database', 'layback' ),
+			'not_found_in_trash'   => __( 'The trash is empty', 'layback' ),
+			'parent_item_colon'    => ''
+			),
+			'menu_name'             => ucfirst($menu_name),
+			'description'			=> $description,
+			'public'				=> true,
+			'publicly_queryable'	=> true,
+			'exclude_from_search'	=> false,
+			'show_ui'				=> true,
+			'query_var'				=> true,
+			'menu_position'			=> null,
+			'menu_icon'				=> 'dashicons-admin-post',
+			'rewrite'				=> array(
 	 				'slug'					=> $single_slug,
 	 				'with_front'			=> false
 	 			),

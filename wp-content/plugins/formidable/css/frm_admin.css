@@ -5876,7 +5876,7 @@ tr.frm_options_heading td {
 	float: left;
 }
 
-#new_fields .frm_product_price_wrapper input:last-child {
+#new_fields .frm_product_price_wrapper input:nth-child(2) {
 	width: 37%;
 	float: right;
 }
@@ -8006,4 +8006,8 @@ Responsive Design
 		display: block;
 		width: 100%;
 	}
+}
+
+.frm-admin-page-styles #frm-publishing #save_menu_header {
+	display: inline-block;
 }

@@ -110,9 +110,9 @@ function ShowProjects_block_render_callback($block, $content = '', $is_preview =
 				?>
 			</div>
 
-			<div class="allprojects">
+			<!-- <div class="allprojects">
 				<a href="#"><button class="ViewButton">View All Projects</button></a>
-			</div>
+			</div> -->
 
 		</div>
 	</div>
