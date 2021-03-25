@@ -1,18 +1,18 @@
 <?php
 
-	add_action('acf/init', 'lb_register_ProjectsBigHero');
-	function lb_register_ProjectsBigHero()
+	add_action('acf/init', 'lb_register_AboutMEsecond');
+	function lb_register_AboutMEsecond()
 	{
 
 	    // check function exists.
 	    if( function_exists('acf_register_block_type') )
 	    {
 
-	    	$title 					= __('AboutMeHero', 'layback');
-	    	$description 			= __('Herothing', 'layback');
+	    	$title 					= __('AboutMesecond', 'layback');
+	    	$description 			= __('justhere', 'layback');
 	    	$tags 					=	array('DEMO');
 	    	$align 					= array('wide', 'full');
-	    	$render 				= 'lb_register_ProjectsBigboi';
+	    	$render 				= 'lb_register_Abouemehsec';
 
 	        // register a testimonial block.
 	        acf_register_block_type(array(
@@ -34,7 +34,7 @@
 	    }
 	}
 
-	function lb_register_ProjectsBigboi( $block, $content = '', $is_preview = false, $post_id = 0 )
+	function lb_register_Abouemehsec( $block, $content = '', $is_preview = false, $post_id = 0 )
 	{
 
 		/* Add all variables in the top
@@ -52,29 +52,16 @@
 	?>
 	
 	<div id="<?php echo $block_id; ?>" class="<?php if( !empty($block_align) ) { echo 'align-' . $block_align; } ?> block-<?php echo $block_name; ?>">
-		<div class="bannerimage">
-			<div class="imaget">
-				<img src="<?php echo wp_get_attachment_url(129); ?>">
-				
-				<div class="Blureffect"></div>
-
-				<div class="Maintxt">
-					<div class="smalltxt">
-						<h1>About Me!</h1>
-					</div>
-					<div class="biggrtxt">
-						<h1>Creating leg-sweeping <br />
-							apps & websites.</h1>
-					</div>
-					<div class="buttonsban">
-						<a href="#"><button class="button1">View Projects</button></a>
-						<a href="#"><button class="button2">Contact Me</button></a>
-					</div>
-				</div>
+			<div class="container">
+			<div class="leftcontainer">
+			<h1>$me = User( </h1>
+			<h2>Name: Thomas Eriksen;</br>
+				Lives-in: Denmark 🇩🇰; </br>
+				Loves: Cars 🚗; 
+			</h2>
+			<h1>)</h1>
 			</div>
-			<div>
 			</div>
-		</div>
 	</div>
     
     <?php }
